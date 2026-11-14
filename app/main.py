@@ -23,7 +23,6 @@ app = FastAPI(
     version="0.1.0",
     docs_url="/docs" if not IS_PRODUCTION else None,
     redoc_url="/redoc" if not IS_PRODUCTION else None,
-    openapi_url="/openapi.json" if not IS_PRODUCTION else None
 )
 
 @app.middleware("http")
