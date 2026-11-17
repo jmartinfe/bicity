@@ -1,0 +1,19 @@
+[project]
+name = "bicity"
+version = "0.1.0"
+description = "Backend API for a city bike-sharing system: bike access, station docking and trip management."
+readme = "README.md"
+authors = [
+    { name = "Juan Martín", email = "jmartinfe@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+bicity = "bicity:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
